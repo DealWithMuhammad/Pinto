@@ -1,658 +1,672 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Stephanie Pinto</title>
+    <!-- Import Tailwind CSS and External Stylesheet -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .title-heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 34px;
+        color: #376489;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 3rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
 
-<head>
-  <title>Stephanie Pinto</title>
-  <!-- Import Tailwind CSS and External Stylesheet -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .title-heading {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 34px;
-      color: #376489;
-      font-family: "Montserrat", sans-serif;
-      margin-top: 3rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-
-    .custom-gradient {
-      background-image: linear-gradient(90deg,
+      .custom-gradient {
+        background-image: linear-gradient(
+          90deg,
           rgba(194, 213, 228, 0.5008054247089461) 0%,
           rgba(194, 213, 228, 1) 50%,
-          rgba(194, 213, 228, 1) 100%);
-    }
+          rgba(194, 213, 228, 1) 100%
+        );
+      }
 
-    .custom-clip {
-      clip-path: inset(0 0 10% 0);
-    }
-  </style>
-</head>
+      .custom-clip {
+        clip-path: inset(0 0 10% 0);
+      }
+    </style>
+  </head>
 
-<body>
-  <div>
-    <header
-      class="bg-white font-raleway shadow-lg font-bold text-[12.5px] uppercase leading-[23.48px] tracking-[0.3em] text-[#274C69]">
-      <nav class="container mx-auto p-[25px]">
-        <div class="flex justify-center space-x-[90px] items-center">
-          <!-- Left Menu -->
-          <div class="hidden md:flex space-x-14">
-            <a href="/about" class="hover:text-blue-500">About</a>
-            <a href="/courses" class="hover:text-blue-500">Courses</a>
-            <a href="/resources" class="hover:text-blue-500">Resources</a>
+  <body>
+    <div>
+      <header
+        class="bg-white font-raleway shadow-lg font-bold text-[12.5px] uppercase leading-[23.48px] tracking-[0.3em] text-[#274C69]"
+      >
+        <nav class="container mx-auto p-[25px]">
+          <div class="flex justify-center space-x-[90px] items-center">
+            <!-- Left Menu -->
+            <div class="hidden md:flex space-x-14">
+              <a href="/about" class="hover:text-blue-500">About</a>
+              <a href="/courses" class="hover:text-blue-500">Courses</a>
+              <a href="/resources" class="hover:text-blue-500">Resources</a>
+            </div>
+
+            <!-- Logo -->
+            <div class="flex justify-center items-center h-12">
+              <a href="/">
+                <img
+                  src="assets/logo.png"
+                  alt="Logo"
+                  class="transform h-[60px] scale-150"
+                />
+              </a>
+            </div>
+
+            <!-- Right Menu -->
+            <div class="hidden md:flex space-x-14">
+              <a href="#" class="hover:text-blue-500">Book</a>
+              <a href="#" class="hover:text-blue-500">Work With Me</a>
+              <a href="#" class="hover:text-blue-500">Blog</a>
+            </div>
           </div>
+        </nav>
+      </header>
 
-          <!-- Logo -->
-          <div class="flex justify-center items-center h-12">
-            <a href="/">
-              <img src="assets/logo.png" alt="Logo" class="transform h-[60px] scale-150" />
-            </a>
-          </div>
-
-          <!-- Right Menu -->
-          <div class="hidden md:flex space-x-14">
-            <a href="#" class="hover:text-blue-500">Book</a>
-            <a href="#" class="hover:text-blue-500">Work With Me</a>
-            <a href="#" class="hover:text-blue-500">Blog</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero Section with Background Image and Overlay -->
-    <section class="relative h-screen hero-section w-full bg-cover bg-center bg-left" style="
+      <!-- Hero Section with Background Image and Overlay -->
+      <section
+        class="relative h-screen hero-section w-full bg-cover bg-center bg-left"
+        style="
           background-image: linear-gradient(
               to right,
               rgba(1, 43, 144, 0.9) 0%,
               rgba(1, 43, 144, 0) 50%
             ),
             url('assets/hero.jpg');
-        ">
-      <div class="relative h-[90%] flex flex-col justify-center items-center text-white pl-24 w-1/2">
-        <h2 class="text-white font-mangolia text-[28px] leading-[56.4px] text-center mb-1">
-          Lorem ipsum dolor sit amet consectetur.
-        </h2>
-        <h1 style="font-weight: 800" class="uppercase text-[40px] text-center">
-          Emotional <br />
-          Intelligence Speaker <br />
-          & Author
-        </h1>
-        <a style="font-weight: 600"
-          class="bg-[rgba(241,225,228,1)] mt-10 text-[14px] text-[#274C69] border border-gray-300 rounded-[40px] px-[50px] py-[10px]"
-          href="#">
-          Learn More
-        </a>
-      </div>
-    </section>
-
-    <!-- Introduction Section -->
-    <section class="flex m-[60px] w-full">
-      <!-- Text Content -->
-      <div class="w-[50%] flex justify-center items-center p-4">
-        <div>
-          <h2 class="text-[40px] mt-12 px-[23px] text-[#376489] font-bold mb-4 font-[400] font-brittany">
-            Hi, I'm <span class="text-[#C1989F]">Stephanie</span>
+        "
+      >
+        <div
+          class="relative h-[90%] flex flex-col justify-center items-center text-white pl-24 w-1/2"
+        >
+          <h2
+            class="text-white font-mangolia text-[28px] leading-[56.4px] text-center mb-1"
+          >
+            Lorem ipsum dolor sit amet consectetur.
           </h2>
-          <div class="text-[#274C69] leading-[17px] px-[23px] font-[500] space-y-6 text-[14px]">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
-              nulla nec. Risus id risus risus duis quisque dignissim amet.
-              Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
-              ullamcorper adipiscing faucibus blandit. Tellus sem facilisis
-              proin amet sit egestas purus. Urna feugiat morbi pharetra turpis
-              enim posuere ut massa velit. Amet mattis volutpat sit leo dolor
-              pellentesque nunc.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
-              nulla nec. Risus id risus risus duis quisque dignissim amet.
-              Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
-              ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
-              nulla nec. Risus id risus risus duis quisque dignissim amet.
-              Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
-              ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
-              Sed tempor ullamcorper adipiscing faucibus blandit.
-            </p>
+          <h1
+            style="font-weight: 800"
+            class="uppercase text-[40px] text-center"
+          >
+            Emotional <br />
+            Intelligence Speaker <br />
+            & Author
+          </h1>
+          <a
+            style="font-weight: 600"
+            class="bg-[rgba(241,225,228,1)] mt-10 text-[14px] text-[#274C69] border border-gray-300 rounded-[40px] px-[50px] py-[10px]"
+            href="#"
+          >
+            Learn More
+          </a>
+        </div>
+      </section>
+
+      <!-- Introduction Section -->
+      <section class="flex m-[60px] z-10 w-full">
+        <!-- Text Content -->
+        <div class="w-[50%] flex justify-center items-center z-10 p-4">
+          <div>
+            <h2
+              class="text-[40px] mt-12 px-[23px] text-[#376489] font-bold mb-4 font-[400] font-brittany"
+            >
+              Hi, I'm <span class="text-[#C1989F]">Stephanie</span>
+            </h2>
+            <div
+              class="text-[#274C69] leading-[17px] px-[23px] font-[500] space-y-6 text-[14px]"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
+                nulla nec. Risus id risus risus duis quisque dignissim amet.
+                Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
+                ullamcorper adipiscing faucibus blandit. Tellus sem facilisis
+                proin amet sit egestas purus. Urna feugiat morbi pharetra turpis
+                enim posuere ut massa velit. Amet mattis volutpat sit leo dolor
+                pellentesque nunc.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
+                nulla nec. Risus id risus risus duis quisque dignissim amet.
+                Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
+                ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
+                nulla nec. Risus id risus risus duis quisque dignissim amet.
+                Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
+                ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
+                Sed tempor ullamcorper adipiscing faucibus blandit.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Image Section -->
-      <div class="w-1/2 flex items-center p-4 relative">
-        <img class="w-[75%]" src="assets/section1.png" alt="Image" />
-      </div>
-    </section>
+        <!-- Image Section -->
+        <div class="w-1/2 flex items-center p-4 relative">
+          <img class="w-[75%]" src="assets/section1.png" alt="Image" />
+        </div>
+      </section>
 
+      <!-- Section 2: Why Emotional Intelligent Parenting? -->
 
-
-
-
-
-
-
-
-
-
-
-    <!-- Section 2: Why Emotional Intelligent Parenting? -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="flex m-[60px] w-full">
-      <!-- Image Section -->
-      <div class="w-[40%] flex justify-center items-center p-4 relative">
-        <img class="w-[80%]" src="assets/section-2.png" alt="Image" />
-      </div>
-      <!-- Text Content -->
-      <div class="w-[50%] flex justify-start items-center">
-        <div>
-          <h2 class="text-[34px] mt-12 px-[23px] text-[#376489] font-bold mb-4 font-[400]">
-            <span class="font-mangolia"> Why </span>
-            <span class="text-[#C1989F] uppercase font-[800]">Emotional Intelligence</span>
-            <br /><span class="font-montserrat uppercase font-[800]">Parenting?</span>
-          </h2>
-          <div class="text-[#274C69] leading-[17px] px-[23px] font-[500] space-y-6 text-[14px]">
-            <p>
-              Emotionally intelligent parents positively manage their own
-              emotions whilst confidently supporting their child's 'big'
-              emotions, such as frustration, anger, and anxiety. The result is
-              a more calm, connected home where life just starts to flow.
-            </p>
-            <p>
-              Emotional intelligence is fast becoming sought after in schools
-              for both educators and their students. Research shows classrooms
-              are calmer, run more smoothly and even record fewer behavior
-              reports.
-            </p>
-            <p>
-              In short, Emotional Intelligence is the way forward for raising
-              humans who are empathetic, self-aware, kind, and resilient.
-            </p>
+      <section class="flex relative m-[60px] mb-[2px] pb-[30px] w-full">
+        <!-- Image Section -->
+        <div class="w-[40%] flex justify-center items-center p-4 relative">
+          <img class="w-[95%]" src="assets/section-2.png" alt="Image" />
+        </div>
+        <!-- Text Content -->
+        <div class="w-[50%] flex justify-start items-center">
+          <div>
+            <h2
+              class="text-[34px] mt-12 px-[23px] text-[#376489] font-bold mb-4 font-[400]"
+            >
+              <span class="font-mangolia"> Why </span>
+              <span class="text-[#C1989F] uppercase font-[800]"
+                >Emotional Intelligence</span
+              >
+              <br /><span class="font-montserrat uppercase font-[800]"
+                >Parenting?</span
+              >
+            </h2>
+            <div
+              class="text-[#274C69] leading-[17px] px-[23px] font-[500] space-y-6 text-[14px]"
+            >
+              <p>
+                Emotionally intelligent parents positively manage their own
+                emotions whilst confidently supporting their child's 'big'
+                emotions, such as frustration, anger, and anxiety. The result is
+                a more calm, connected home where life just starts to flow.
+              </p>
+              <p>
+                Emotional intelligence is fast becoming sought after in schools
+                for both educators and their students. Research shows classrooms
+                are calmer, run more smoothly and even record fewer behavior
+                reports.
+              </p>
+              <p>
+                In short, Emotional Intelligence is the way forward for raising
+                humans who are empathetic, self-aware, kind, and resilient.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Section 3: Image Banner -->
 
-
-
-
-
-
-
-
-
-
-    <!-- Section 3: Image Banner -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="relative flex justify-between items-center h-[80%] w-full bg-cover bg-center bg-left" style="
+      <section
+        class="relative flex justify-between items-center h-[80%] w-full bg-cover bg-center bg-left"
+        style="
           background-image: linear-gradient(
               to right,
               rgba(193, 152, 159, 0.9) 80%,
               rgba(193, 152, 159, 0.9) 80%
             ),
             url('assets/banner.png');
-        ">
-      <div class="py-14">
-        <img class="w-[80%]" src="assets/banner/first.png" alt="Image" />
-      </div>
-      <div>
-        <img class="w-[80%]" src="assets/banner/second.png" alt="Image" />
-      </div>
-      <div>
-        <img class="w-[80%]" src="assets/banner/third.png" alt="Image" />
-      </div>
-      <div>
-        <img class="w-[80%]" src="assets/banner/fourth.png" alt="Image" />
-      </div>
-      <div>
-        <img class="w-[80%]" src="assets/banner/fifth.png" alt="Image" />
-      </div>
-      <div>
-        <img class="w-[80%]" src="assets/banner/sixth.png" alt="Image" />
-      </div>
-      <div>
-        <img class="w-[80%]" src="assets/banner/seventh.png" alt="Image" />
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Section 4: Podcast -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="my-20 mx-6">
-      <!-- Heading of section -->
-      <div class="text-[34px] text-center">
-        <div class="text-[#376489] font-montserrat uppercase font-[800]">
-          <h1>Emotional Intelligent parenting?</h1>
-          <h1 class="leading-7 text-[#C1989F]">with stephanie PINTO</h1>
+        "
+      >
+        <div class="py-14">
+          <img class="w-[80%]" src="assets/banner/first.png" alt="Image" />
         </div>
-        <h1 class="font-mangolia text-[#C1989F] mt-3">Podcast</h1>
-      </div>
-      <div class="mt-4 w-full h-screen flex justify-center gap-0 overflow-hidden">
-        <!-- Card1: -->
-        <div class="flex">
-          <div class="w-[19rem] h-[45rem]">
-            <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-              <div class="relative">
-                <div class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"></div>
-                <img alt="Parent Courses" class="z-20 w-full h-[20rem] object-cover" src="assets/cards/card-1.jpg" />
-              </div>
+        <div>
+          <img class="w-[80%]" src="assets/banner/second.png" alt="Image" />
+        </div>
+        <div>
+          <img class="w-[80%]" src="assets/banner/third.png" alt="Image" />
+        </div>
+        <div>
+          <img class="w-[80%]" src="assets/banner/fourth.png" alt="Image" />
+        </div>
+        <div>
+          <img class="w-[80%]" src="assets/banner/fifth.png" alt="Image" />
+        </div>
+        <div>
+          <img class="w-[80%]" src="assets/banner/sixth.png" alt="Image" />
+        </div>
+        <div>
+          <img class="w-[80%]" src="assets/banner/seventh.png" alt="Image" />
+        </div>
+      </section>
 
-              <div class="relative w-full">
-                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center">
-                  <div class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center">
-                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">
-                      Episode - 40
-                    </h2>
+      <!-- Section 4: Podcast -->
+
+      <section class="my-20 mx-6">
+        <!-- Heading of section -->
+        <div class="text-[34px] text-center">
+          <div class="text-[#376489] font-montserrat uppercase font-[800]">
+            <h1>Emotional Intelligent parenting?</h1>
+            <h1 class="leading-7 text-[#C1989F]">with stephanie PINTO</h1>
+          </div>
+          <h1 class="font-mangolia text-[#C1989F] mt-3">Podcast</h1>
+        </div>
+        <div
+          class="mt-4 w-full h-screen flex justify-center gap-0 overflow-hidden"
+        >
+          <!-- Card1: -->
+          <div class="flex">
+            <div class="w-[19rem] h-[45rem]">
+              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
+                <div class="relative">
+                  <div
+                    class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"
+                  ></div>
+                  <img
+                    alt="Parent Courses"
+                    class="z-20 w-full h-[20rem] object-cover"
+                    src="assets/cards/card-1.jpg"
+                  />
+                </div>
+
+                <div class="relative w-full">
+                  <div
+                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center"
+                  >
+                    <div
+                      class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center"
+                    >
+                      <h2
+                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
+                      >
+                        Episode - 40
+                      </h2>
+                    </div>
+
+                    <div class="mt-6 mb-4">
+                      <p
+                        class="text-[#C1989F] font-montserrat text-xl uppercase w-[95%] mx-auto font-bold"
+                      >
+                        Timing your Triggers with
+                      </p>
+                      <p class="font-mangolia text-2xl text-[#C1989F]">
+                        Emotional Intelligence
+                      </p>
+
+                      <p class="text-gray-700 text-sm my-6">
+                        With Stephanie Pinto
+                      </p>
+                      <button
+                        class="mt-4 bg-[#C1989F] text-[#F1E1E4] uppercase text-white py-2 text-sm px-12 rounded-full w-[80%]"
+                      >
+                        Listen Now
+                      </button>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                  <div class="mt-6 mb-4">
-                    <p class="text-[#C1989F] font-montserrat text-xl uppercase w-[95%] mx-auto font-semibold">
-                      Timing your Triggers with
-                    </p>
-                    <p class="font-mangolia text-2xl text-[#C1989F]">
-                      Emotional Intelligence
-                    </p>
+          <!-- Card2: -->
+          <div class="flex">
+            <div class="w-[19rem] h-[45rem]">
+              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
+                <div class="relative">
+                  <div
+                    class="mx-6 border border-[#92b2d1] flex items-center justify-center h-4"
+                  ></div>
+                  <img
+                    alt="Parent Courses"
+                    class="z-20 w-full h-[20rem] object-cover"
+                    src="assets/cards/card-2.jpg"
+                  />
+                </div>
 
-                    <p class="text-gray-700 text-sm my-6">
-                      With Stephanie Pinto
-                    </p>
-                    <button
-                      class="mt-4 bg-[#C1989F] text-[#F1E1E4] uppercase text-white py-1 text-sm px-12 rounded-full w-[80%]">
-                      Listen Now
-                    </button>
+                <div class="relative w-full">
+                  <div
+                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center"
+                  >
+                    <div
+                      class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center"
+                    >
+                      <h2
+                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
+                      >
+                        Episode - 39
+                      </h2>
+                    </div>
+
+                    <div class="mt-6 mb-4">
+                      <p
+                        class="text-[#376489] font-montserrat text-xl uppercase w-[95%] mx-auto font-bold"
+                      >
+                        Redefining fatherhood with
+                      </p>
+                      <p class="font-mangolia text-2xl text-[#376489]">
+                        Daniel Franco
+                      </p>
+
+                      <p class="text-gray-700 text-sm my-6">
+                        With Stephanie Pinto
+                      </p>
+                      <button
+                        class="mt-4 bg-[#376489] text-[#F1E1E4] uppercase text-white py-2 text-xs px-12 rounded-full w-[80%]"
+                      >
+                        Listen Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card3: -->
+          <div class="flex">
+            <div class="w-[19rem] h-[45rem]">
+              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
+                <div class="relative">
+                  <div
+                    class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"
+                  ></div>
+                  <img
+                    alt="Parent Courses"
+                    class="z-20 w-full h-[20rem] object-cover"
+                    src="assets/cards/card-3.jpg"
+                  />
+                </div>
+
+                <div class="relative w-full">
+                  <div
+                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center"
+                  >
+                    <div
+                      class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center"
+                    >
+                      <h2
+                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
+                      >
+                        Episode - 39
+                      </h2>
+                    </div>
+
+                    <div class="mt-6 mb-4">
+                      <p
+                        class="text-[#C1989F] font-montserrat text-xl font-bold uppercase w-[99%] mx-auto"
+                      >
+                        Respond not React <br />
+                        : Mastering Your
+                      </p>
+                      <p class="font-mangolia text-2xl text-[#C1989F]">
+                        Emotional Intelligence
+                      </p>
+
+                      <p class="text-gray-700 text-sm my-6">
+                        With Stephanie Pinto
+                      </p>
+                      <button
+                        class="mt-4 font-raleway text-[#F1E1E4] uppercase text-xs rounded-full bg-[#C1989F] uppercase text-white py-2 text-sm px-12 rounded-full w-[80%]"
+                      >
+                        Listen Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="flex">
+            <div class="w-[19rem] h-[45rem]">
+              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
+                <div class="relative">
+                  <div
+                    class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"
+                  ></div>
+                  <img
+                    alt="Parent Courses"
+                    class="z-20 w-full h-[20rem] object-cover"
+                    src="assets/cards/card-4.jpg"
+                  />
+                </div>
+
+                <div class="relative w-full">
+                  <div
+                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center"
+                  >
+                    <div
+                      class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center"
+                    >
+                      <h2
+                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
+                      >
+                        Episode - 37
+                      </h2>
+                    </div>
+
+                    <div class="mt-6 mb-4">
+                      <p
+                        class="text-[#376489] font-montserrat text-xl uppercase w-[95%] mx-auto font-bold"
+                      >
+                        Redefining fatherhood with
+                      </p>
+                      <p class="font-mangolia text-2xl text-[#376489]">
+                        Daniel Franco
+                      </p>
+
+                      <p class="text-gray-700 text-sm my-6">
+                        With Stephanie Pinto
+                      </p>
+                      <button
+                        class="mt-4 bg-[#376489] text-[#F1E1E4] text-xs uppercase text-white py-2 px-12 rounded-full w-[80%]"
+                      >
+                        Listen Now
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Card2: -->
-        <div class="flex">
-          <div class="w-[19rem] h-[45rem]">
-            <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-              <div class="relative">
-                <div class="mx-6 border border-[#92b2d1] flex items-center justify-center h-4"></div>
-                <img alt="Parent Courses" class="z-20 w-full h-[20rem] object-cover" src="assets/cards/card-2.jpg" />
-              </div>
-
-              <div class="relative w-full">
-                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center">
-                  <div class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center">
-                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">
-                      Episode - 39
-                    </h2>
-                  </div>
-
-                  <div class="mt-6 mb-4">
-                    <p class="text-[#376489] font-montserrat text-xl uppercase w-[95%] mx-auto font-semibold">
-                      Redefining fatherhood with
-                    </p>
-                    <p class="font-mangolia text-2xl text-[#376489]">
-                      Daniel Franco
-                    </p>
-
-                    <p class="text-gray-700 text-sm my-6">
-                      With Stephanie Pinto
-                    </p>
-                    <button
-                      class="mt-4 bg-[#376489] text-[#F1E1E4] uppercase text-white py-1 text-xs px-12 rounded-full w-[80%]">
-                      Listen Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="flex justify-center">
+          <a
+            href="#"
+            class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-sm rounded-full py-3 px-14"
+          >
+            All episodes
+          </a>
         </div>
+      </section>
 
-        <!-- Card3: -->
-        <div class="flex">
-          <div class="w-[19rem] h-[45rem]">
-            <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-              <div class="relative">
-                <div class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"></div>
-                <img alt="Parent Courses" class="z-20 w-full h-[20rem] object-cover" src="assets/cards/card-3.jpg" />
-              </div>
+      <!-- Section 5 -->
 
-              <div class="relative w-full">
-                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center">
-                  <div class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center">
-                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">
-                      Episode - 39
-                    </h2>
-                  </div>
-
-                  <div class="mt-6 mb-4">
-                    <p class="text-[#C1989F] font-montserrat text-xl uppercase w-[95%] mx-auto font-semibold">
-                      Timing your Triggers with
-                    </p>
-                    <p class="font-mangolia text-2xl text-[#C1989F]">
-                      Emotional Intelligence
-                    </p>
-
-                    <p class="text-gray-700 text-sm my-6">
-                      With Stephanie Pinto
-                    </p>
-                    <button
-                      class="mt-4 font-raleway text-[#F1E1E4] uppercase text-xs rounded-full bg-[#C1989F] uppercase text-white py-1 text-sm px-12 rounded-full w-[80%]">
-                      Listen Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="flex">
-          <div class="w-[19rem] h-[45rem]">
-            <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-              <div class="relative">
-                <div class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"></div>
-                <img alt="Parent Courses" class="z-20 w-full h-[20rem] object-cover" src="assets/cards/card-4.jpg" />
-              </div>
-
-              <div class="relative w-full">
-                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center">
-                  <div class="mx-12 absolute inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center">
-                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">
-                      Episode - 37
-                    </h2>
-                  </div>
-
-                  <div class="mt-6 mb-4">
-                    <p class="text-[#376489] font-montserrat text-xl uppercase w-[95%] mx-auto font-semibold">
-                      Redefining fatherhood with
-                    </p>
-                    <p class="font-mangolia text-2xl text-[#376489]">
-                      Daniel Franco
-                    </p>
-
-                    <p class="text-gray-700 text-sm my-6">
-                      With Stephanie Pinto
-                    </p>
-                    <button
-                      class="mt-4 bg-[#376489] text-[#F1E1E4] text-xs uppercase text-white py-1 px-12 rounded-full w-[80%]">
-                      Listen Now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <a href="#" class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-sm rounded-full py-3 px-14">
-          All episodes
-        </a>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Section 5 -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="relative w-full my-10" style="
+      <section
+        class="relative w-full my-10"
+        style="
           background-image: linear-gradient(
               to right,
               rgba(194, 213, 228, 0.9) 50%,
               rgba(194, 213, 228, 0) 96% /* Fade out towards the right */
             ),
             url('assets/section8.jpg');
-          height: 100vh;
+          height: 130vh;
           background-position: right;
           background-size: 100% 100%;
           background-repeat: no-repeat;
-        ">
-      <div class="relative py-10 text-white pl-24 w-[60%]">
-        <div class="text-[34px] text-[#274C69] font-montserrat mt-24 font-extrabold mb-4">
-          <h1>
-            <span class="uppercase">Heres How I can Help</span>
-            <span class="font-mangolia text-[39px]">You?</span>
-          </h1>
-        </div>
-        <div class="w-[83%] font-semibold text-[#274C69] text-sm">
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
-            nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
-            volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
-            adipiscing faucibus blandit. Tellus sem facilisis proin amet sit
-            egestas purus. Urna feugiat morbi pharetra turpis enim posuere ut
-            massa velit. Amet mattis volutpat sit leo dolor pellentesque nunc.
-          </p>
-          <p class="mt-5">
-            Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
-            nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
-            volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
-            senectus consequat. Hendrerit sed enim habitasse in.
-          </p>
-        </div>
-        <div>
-          <h1 class="text-[39px] text-[#274C69] font-mangolia font-normal my-4">
-            Lorem ipsum dolor sit
-          </h1>
-          <p class="w-[83%] font-semibold text-[#274C69] text-sm">
-            Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
-            nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
-            volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
-            adipiscing faucibus blandit. Tellus sem facilisis
-          </p>
-        </div>
-        <div class="mt-7">
-          <a href="#" class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-xs rounded-full py-3 px-14">Book
-            Free Consult
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Section Offerings -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="h-[70vh] my-16">
-      <div>
-        <div>
-          <h1 class="title-heading my-10">Offerings</h1>
-        </div>
-        <div class="flex justify-center">
-          <!-- first card -->
-          <div class="max-w-md mx-auto bg-transparent p-6">
-            <div class="relative">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/394d/fe67/aaa5e85e3533b17c9325fe7cbd7a17fa?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQeXlySTPoxWU9pRhFLE6kqBFUapX6MCTU~WSFdSp1MyKgeie807SaDOwkWUCb~zrG26VV84XzDpvp8oRr7bkjTQUuhZDnAW1ybV3ws8tULmeeS75dERzRbFGTOqNXTjw~ag1HXIVaEzDBWUjz6Na8V9IioM6OgFCroS553W4Y2i7jFzPXekec-OOuHnRUxEeuf8m0tV4HkCc3TIK~k2JgFQ23cbpFkHNQiHKd6ZTk~zkurNKC5SGiDs8oAN90rGeF6g7xuNP1dC4wvQncLrwSeh3ZrM6rbKQXI41MAWkXhKKUliv74Rjqlr8LBr-aLhD~V1MSS1IMNW1ZEIS-rCig__"
-                alt="Events & Workshops" class="w-full h-72 object-cover" />
-              <div
-                class="mx-12 absolute inset-x-0 -top-5 bg-[#C2D5E4] bg-opacity-80 flex items-center justify-center h-16">
-                <h2 class="text-[#274C69] font-montserrat leading-6 font-bold text-center text-lg uppercase">
-                  Events &<br />Workshops
-                </h2>
-              </div>
-            </div>
-
-            <div class="relative">
-              <div class="absolute mx-4 font-montserrat font-medium p-3 py-6 bg-[#C2D5E4] text-center">
-                <p class="text-[#274C69] text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Felis tristique
-                  vulputate aliquam turpis molestie elementum. Odio urna ...
-                  Lorem ipsum dolor sit amet consectetur. Felis tristique
-                  vulputate aliquam turpis molestie elementum.
-                </p>
-                <button class="mt-4 bg-[#376489] text-white py-2 text-sm px-12 rounded-full transition">
-                  READ MORE
-                </button>
-              </div>
-              <div class="mx-2 p-3 py-6 bg-[#F1E1E4]"></div>
-            </div>
+        "
+      >
+        <div class="relative py-10 text-white pl-24 w-[60%]">
+          <div
+            class="text-[34px] text-[#274C69] font-montserrat mt-24 font-extrabold mb-4"
+          >
+            <h1>
+              <span class="uppercase">Heres How I can Help</span>
+              <span class="font-mangolia text-[39px]">You?</span>
+            </h1>
           </div>
-          <!-- second card -->
-          <div class="max-w-md mx-auto bg-transparent p-6">
-            <div class="relative">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/6d7e/eaba/710d8377b41627957221907c168fb83a?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DAGIAoiz326rngdzOXaYnBY5jrQiIqyZa8vOgWILwOB6N9tSnh7fwxoyfbkfrBDLMsqzfq5xIcU6-gJWm1LdA1NcgyJkEUqAvRgMQ3D5cij5alMGGjs9uH08XKJo9159T-5HcCSJ4NfCLU1pPypL9wbnVvTk1CXpg9f-LjyGvCRnI2LqMOJP1KXAt9j3d824AOHyjdjkBMtU6tC~pi7YwIIlDDK7WJFx1SOM1QgEiBBVQ2pJdEADw0B6dpoY~JOZKdQ3YIH-F0RUbOpDnJBP-Saf5T6h2nIXFSt1rY3-Va3ejb-0bxsNqNDs-V45xWm9HDu~e2CfKxkJLIinQUTCIg__"
-                alt="Events & Workshops" class="w-full h-72 object-cover" />
-              <div
-                class="mx-12 absolute inset-x-0 -top-5 bg-[#F1E1E4] bg-opacity-80 flex items-center justify-center h-16">
-                <h2 class="text-[#C1989F] font-montserrat leading-6 font-bold text-center text-lg uppercase">
-                  Group or private <br />Coaching
-                </h2>
-              </div>
-            </div>
-
-            <div class="relative">
-              <div class="absolute mx-4 font-montserrat font-medium p-3 py-6 bg-[#F1E1E4] text-center">
-                <p class="text-[#274C69] text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Felis tristique
-                  vulputate aliquam turpis molestie elementum. Odio urna ...
-                  Lorem ipsum dolor sit amet consectetur. Felis tristique
-                  vulputate aliquam turpis molestie elementum.
-                </p>
-                <button class="mt-4 bg-[#C1989F] text-white py-2 text-sm px-12 rounded-full transition">
-                  READ MORE
-                </button>
-              </div>
-              <div class="mx-2 p-3 py-6 bg-[#C2D5E4]"></div>
-            </div>
+          <div class="w-[83%] font-semibold text-[#274C69] text-sm">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
+              nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
+              volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
+              adipiscing faucibus blandit. Tellus sem facilisis proin amet sit
+              egestas purus. Urna feugiat morbi pharetra turpis enim posuere ut
+              massa velit. Amet mattis volutpat sit leo dolor pellentesque nunc.
+            </p>
+            <p class="mt-5">
+              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
+              nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
+              volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
+              senectus consequat. Hendrerit sed enim habitasse in.
+            </p>
           </div>
-          <!-- third card -->
-          <div class="max-w-md mx-auto bg-transparent p-6">
-            <div class="relative">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/394d/fe67/aaa5e85e3533b17c9325fe7cbd7a17fa?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQeXlySTPoxWU9pRhFLE6kqBFUapX6MCTU~WSFdSp1MyKgeie807SaDOwkWUCb~zrG26VV84XzDpvp8oRr7bkjTQUuhZDnAW1ybV3ws8tULmeeS75dERzRbFGTOqNXTjw~ag1HXIVaEzDBWUjz6Na8V9IioM6OgFCroS553W4Y2i7jFzPXekec-OOuHnRUxEeuf8m0tV4HkCc3TIK~k2JgFQ23cbpFkHNQiHKd6ZTk~zkurNKC5SGiDs8oAN90rGeF6g7xuNP1dC4wvQncLrwSeh3ZrM6rbKQXI41MAWkXhKKUliv74Rjqlr8LBr-aLhD~V1MSS1IMNW1ZEIS-rCig__"
-                alt="Events & Workshops" class="w-full h-72 object-cover" />
-              <div
-                class="mx-12 absolute inset-x-0 -top-5 bg-[#C2D5E4] bg-opacity-80 flex items-center justify-center h-16">
-                <h2 class="text-[#274C69] font-montserrat leading-6 font-bold text-center text-lg uppercase">
-                  Parent <br />Courses
-                </h2>
-              </div>
-            </div>
-
-            <div class="relative">
-              <div class="absolute mx-4 font-montserrat font-medium p-3 py-6 bg-[#C2D5E4] text-center">
-                <p class="text-[#274C69] text-sm">
-                  Lorem ipsum dolor sit amet consectetur. Felis tristique
-                  vulputate aliquam turpis molestie elementum. Odio urna ...
-                  Lorem ipsum dolor sit amet consectetur. Felis tristique
-                  vulputate aliquam turpis molestie elementum.
-                </p>
-                <button class="mt-4 bg-[#376489] text-white py-2 text-sm px-12 rounded-full transition">
-                  READ MORE
-                </button>
-              </div>
-              <div class="mx-2 p-3 py-6 bg-[#F1E1E4]"></div>
-            </div>
+          <div>
+            <h1
+              class="text-[39px] text-[#274C69] font-mangolia font-normal my-4"
+            >
+              Lorem ipsum dolor sit
+            </h1>
+            <p class="w-[83%] font-semibold text-[#274C69] text-sm">
+              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
+              nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
+              volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
+              adipiscing faucibus blandit. Tellus sem facilisis
+            </p>
+          </div>
+          <div class="mt-7">
+            <a
+              href="#"
+              class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-xs rounded-full py-3 px-14"
+              >Book Free Consult
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Section Offerings -->
+      <section class="h-screen mx-10 mb-28 mt-20">
+        <div class="h-[70vh]">
+          <div>
+            <div>
+              <h1 class="title-heading my-10">Offerings</h1>
+            </div>
+            <div class="flex justify-center">
+              <!-- first card -->
+              <div class="max-w-md mx-auto bg-transparent p-3">
+                <div class="relative">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/394d/fe67/aaa5e85e3533b17c9325fe7cbd7a17fa?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQeXlySTPoxWU9pRhFLE6kqBFUapX6MCTU~WSFdSp1MyKgeie807SaDOwkWUCb~zrG26VV84XzDpvp8oRr7bkjTQUuhZDnAW1ybV3ws8tULmeeS75dERzRbFGTOqNXTjw~ag1HXIVaEzDBWUjz6Na8V9IioM6OgFCroS553W4Y2i7jFzPXekec-OOuHnRUxEeuf8m0tV4HkCc3TIK~k2JgFQ23cbpFkHNQiHKd6ZTk~zkurNKC5SGiDs8oAN90rGeF6g7xuNP1dC4wvQncLrwSeh3ZrM6rbKQXI41MAWkXhKKUliv74Rjqlr8LBr-aLhD~V1MSS1IMNW1ZEIS-rCig__"
+                    alt="Events & Workshops"
+                    class="w-full h-72 object-cover"
+                  />
+                  <div
+                    class="mx-12 absolute inset-x-0 -top-5 bg-[#C2D5E4] bg-opacity-80 flex items-center justify-center h-16"
+                  >
+                    <h2
+                      class="text-[#274C69] font-montserrat leading-6 font-bold text-center text-lg uppercase"
+                    >
+                      Events &<br />Workshops
+                    </h2>
+                  </div>
+                </div>
 
+                <div class="relative">
+                  <div
+                    class="absolute mx-4 font-montserrat font-medium p-3 py-6 bg-[#C2D5E4] text-center"
+                  >
+                    <p class="text-[#274C69] text-xs">
+                      Lorem ipsum dolor sit amet consectetur. Felis tristique
+                      vulputate aliquam turpis molestie elementum. Odio urna ...
+                      Lorem ipsum dolor sit amet consectetur. Felis tristique
+                      vulputate aliquam turpis molestie elementum.
+                    </p>
+                    <button
+                      class="mt-4 bg-[#376489] text-white py-2 text-xs px-12 rounded-full transition"
+                    >
+                      READ MORE
+                    </button>
+                  </div>
+                  <div class="mx-2 p-3 py-6 bg-[#F1E1E4]"></div>
+                </div>
+              </div>
+              <!-- second card -->
+              <div class="max-w-md mx-auto bg-transparent p-3">
+                <div class="relative">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6d7e/eaba/710d8377b41627957221907c168fb83a?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DAGIAoiz326rngdzOXaYnBY5jrQiIqyZa8vOgWILwOB6N9tSnh7fwxoyfbkfrBDLMsqzfq5xIcU6-gJWm1LdA1NcgyJkEUqAvRgMQ3D5cij5alMGGjs9uH08XKJo9159T-5HcCSJ4NfCLU1pPypL9wbnVvTk1CXpg9f-LjyGvCRnI2LqMOJP1KXAt9j3d824AOHyjdjkBMtU6tC~pi7YwIIlDDK7WJFx1SOM1QgEiBBVQ2pJdEADw0B6dpoY~JOZKdQ3YIH-F0RUbOpDnJBP-Saf5T6h2nIXFSt1rY3-Va3ejb-0bxsNqNDs-V45xWm9HDu~e2CfKxkJLIinQUTCIg__"
+                    alt="Events & Workshops"
+                    class="w-full h-72 object-cover"
+                  />
+                  <div
+                    class="mx-12 absolute inset-x-0 -top-5 bg-[#F1E1E4] bg-opacity-80 flex items-center justify-center h-16"
+                  >
+                    <h2
+                      class="text-[#C1989F] font-montserrat leading-6 font-bold text-center text-lg uppercase"
+                    >
+                      Group or private <br />Coaching
+                    </h2>
+                  </div>
+                </div>
 
+                <div class="relative">
+                  <div
+                    class="absolute mx-4 font-montserrat font-medium p-3 py-6 bg-[#F1E1E4] text-center"
+                  >
+                    <p class="text-[#274C69] text-xs">
+                      Lorem ipsum dolor sit amet consectetur. Felis tristique
+                      vulputate aliquam turpis molestie elementum. Odio urna ...
+                      Lorem ipsum dolor sit amet consectetur. Felis tristique
+                      vulputate aliquam turpis molestie elementum.
+                    </p>
+                    <button
+                      class="mt-4 bg-[#C1989F] text-white py-2 text-xs px-12 rounded-full transition"
+                    >
+                      READ MORE
+                    </button>
+                  </div>
+                  <div class="mx-2 p-3 py-6 bg-[#C2D5E4]"></div>
+                </div>
+              </div>
+              <!-- third card -->
+              <div class="max-w-md mx-auto bg-transparent p-3">
+                <div class="relative">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/394d/fe67/aaa5e85e3533b17c9325fe7cbd7a17fa?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQeXlySTPoxWU9pRhFLE6kqBFUapX6MCTU~WSFdSp1MyKgeie807SaDOwkWUCb~zrG26VV84XzDpvp8oRr7bkjTQUuhZDnAW1ybV3ws8tULmeeS75dERzRbFGTOqNXTjw~ag1HXIVaEzDBWUjz6Na8V9IioM6OgFCroS553W4Y2i7jFzPXekec-OOuHnRUxEeuf8m0tV4HkCc3TIK~k2JgFQ23cbpFkHNQiHKd6ZTk~zkurNKC5SGiDs8oAN90rGeF6g7xuNP1dC4wvQncLrwSeh3ZrM6rbKQXI41MAWkXhKKUliv74Rjqlr8LBr-aLhD~V1MSS1IMNW1ZEIS-rCig__"
+                    alt="Events & Workshops"
+                    class="w-full h-72 object-cover"
+                  />
+                  <div
+                    class="mx-12 absolute inset-x-0 -top-5 bg-[#C2D5E4] bg-opacity-80 flex items-center justify-center h-16"
+                  >
+                    <h2
+                      class="text-[#274C69] font-montserrat leading-6 font-bold text-center text-lg uppercase"
+                    >
+                      Parent <br />Courses
+                    </h2>
+                  </div>
+                </div>
 
+                <div class="relative">
+                  <div
+                    class="absolute mx-4 font-montserrat font-medium p-3 py-6 bg-[#C2D5E4] text-center"
+                  >
+                    <p class="text-[#274C69] text-xs">
+                      Lorem ipsum dolor sit amet consectetur. Felis tristique
+                      vulputate aliquam turpis molestie elementum. Odio urna ...
+                      Lorem ipsum dolor sit amet consectetur. Felis tristique
+                      vulputate aliquam turpis molestie elementum.
+                    </p>
+                    <button
+                      class="mt-4 bg-[#376489] text-white py-2 text-xs px-12 rounded-full transition"
+                    >
+                      READ MORE
+                    </button>
+                  </div>
+                  <div class="mx-2 p-3 py-6 bg-[#F1E1E4]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Section How it Works -->
 
-
-
-
-
-
-    <!-- Section How it Works -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="h-max mt-10">
-      <div style="
+      <section class="h-max mt-10 mb-20">
+        <div
+          style="
             background-image: linear-gradient(
                 rgba(216, 184, 184, 0.9) 20%,
                 rgba(216, 184, 184, 1) 100%
@@ -662,355 +676,370 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-          ">
-        <div class="pt-7">
-          <h1 class="text-center title-heading text-white">How it works?</h1>
-        </div>
-        <div class="flex w justify-evenly items-center">
-          <div class="max-w-sm flex flex-col items-center">
-            <img class="w-20" src="assets/sectionWork/IconWork.png" alt="icon-1" />
-            <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
-              Lorem Ipsum <br />
-              Dolor Sit
-            </h2>
-            <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
-              Lorem ipsum dolor sit amet consectetur <br />Felis tristique
-              vulputate aliquam turpis <br />
-              molestie elementum.
-            </p>
+          "
+        >
+          <div class="pt-7">
+            <h1 class="text-center title-heading text-white">How it works?</h1>
           </div>
-          <div class="max-w-sm flex flex-col items-center">
-            <img class="w-20" src="assets/sectionWork/icon.png" alt="icon-2" />
-            <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
-              Lorem Ipsum <br />
-              Dolor Sit
-            </h2>
-            <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
-              Lorem ipsum dolor sit amet consectetur <br />Felis tristique
-              vulputate aliquam turpis <br />
-              molestie elementum.
-            </p>
-          </div>
-          <div class="max-w-sm flex flex-col items-center">
-            <img class="w-20" src="assets/sectionWork/IconWork3.png" alt="icon-3" />
-            <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
-              Lorem Ipsum <br />
-              Dolor Sit
-            </h2>
-            <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
-              Lorem ipsum dolor sit amet consectetur <br />Felis tristique
-              vulputate aliquam turpis <br />
-              molestie elementum.
-            </p>
-          </div>
-          <div class="max-w-sm flex flex-col items-center">
-            <img class="w-20" src="assets/sectionWork/IconWork4.png" alt="icon-4" />
-            <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
-              Lorem Ipsum <br />
-              Dolor Sit
-            </h2>
-            <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
-              Lorem ipsum dolor sit amet consectetur <br />Felis tristique
-              vulputate aliquam turpis <br />
-              molestie elementum.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Section Latest Blog -->
-
-
-
-
-
-
-
-
-
-
-
-    <section class="mx-10 w-full">
-      <div>
-        <h1 class="title-heading">
-          Latest <span class="text-[#C1989F]">Blogs</span>
-        </h1>
-      </div>
-      <div class="container mx-auto p-6">
-        <div class="flex flex-row gap-8">
-          <!-- Left Section -->
-          <div class="ml-[70px] w-[500px] h-[560px] relative overflow-hidden">
-            <img alt="Featured image" class="w-full h-full object-cover"
-              src="https://s3-alpha-sig.figma.com/img/b42a/15a0/0b81413cac2344c9dd5239fea96ee6c6?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ANREU7PrnjjjS6Uh8~uv2JoAYcePO6xGLMIETqtuUsyb7baymHwFEMj5LrczPm7c2oo0B92MX-SVoA~0NZM3Cjfs27hzVJQMR7QSzrPaHvRQrwfCxsXKYIqW~6nzeHiTbb-ofYsnGaxSiGrGEndAxKCIRY5-~q5E4KbuSw6jMBJfNDdhRpI7tUgN4FZiodzm8j3dE3ONG8XBO06I-kTDqHBppJX~jlbgwWRAPYdY6xRXJjqoXSadwpHbJ2e4aZ63E-owx0hs2BJmqKsAVpUcL9RyKoesZLmybCI-7aPX~CxD5KymHWvUp5wSN4xsBC8kHgdmSHxIWcudjTQtPf-B6w__" />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6 text-white">
-              <p class="text-center text-sm mb-2">SEPTEMBER 6, 2023</p>
-              <h2 class="text-center font-montserrat text-2xl font-bold mb-4">
-                A REMINDER TO ALL PARENTS: YOU DON'T HAVE TO GET IT 'RIGHT'
-                ALL THE TIME.
+          <div class="flex w justify-evenly items-center">
+            <div class="max-w-sm flex flex-col items-center">
+              <img
+                class="w-20"
+                src="assets/sectionWork/IconWork.png"
+                alt="icon-1"
+              />
+              <h2
+                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
+              >
+                Lorem Ipsum <br />
+                Dolor Sit
               </h2>
-              <button class="mx-auto w-[37%] text-xs bg-[#c1989f] rounded-full py-2 px-6 text-white">
-                READ MORE
+              <p
+                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
+              >
+                Lorem ipsum dolor sit amet consectetur <br />Felis tristique
+                vulputate aliquam turpis <br />
+                molestie elementum.
+              </p>
+            </div>
+            <div class="max-w-sm flex flex-col items-center">
+              <img
+                class="w-20"
+                src="assets/sectionWork/icon.png"
+                alt="icon-2"
+              />
+              <h2
+                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
+              >
+                Lorem Ipsum <br />
+                Dolor Sit
+              </h2>
+              <p
+                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
+              >
+                Lorem ipsum dolor sit amet consectetur <br />Felis tristique
+                vulputate aliquam turpis <br />
+                molestie elementum.
+              </p>
+            </div>
+            <div class="max-w-sm flex flex-col items-center">
+              <img
+                class="w-20"
+                src="assets/sectionWork/IconWork3.png"
+                alt="icon-3"
+              />
+              <h2
+                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
+              >
+                Lorem Ipsum <br />
+                Dolor Sit
+              </h2>
+              <p
+                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
+              >
+                Lorem ipsum dolor sit amet consectetur <br />Felis tristique
+                vulputate aliquam turpis <br />
+                molestie elementum.
+              </p>
+            </div>
+            <div class="max-w-sm flex flex-col items-center">
+              <img
+                class="w-20"
+                src="assets/sectionWork/IconWork4.png"
+                alt="icon-4"
+              />
+              <h2
+                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
+              >
+                Lorem Ipsum <br />
+                Dolor Sit
+              </h2>
+              <p
+                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
+              >
+                Lorem ipsum dolor sit amet consectetur <br />Felis tristique
+                vulputate aliquam turpis <br />
+                molestie elementum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Latest Blog -->
+
+      <section class="mx-10 w-full">
+        <div>
+          <h1 class="title-heading">
+            Latest <span class="text-[#C1989F]">Blogs</span>
+          </h1>
+        </div>
+        <div class="container mt-10 w-[95%]">
+          <div class="flex flex-row gap-8">
+            <div class="ml-[70px] w-[470px] h-[520px] relative overflow-hidden">
+              <div
+                class="w-full h-full bg-cover bg-center"
+                style="
+                  background-image: linear-gradient(
+                      rgba(39, 76, 105, 0) 40%,
+                      rgb(37, 140, 218) 100%
+                    ),
+                    url('https://s3-alpha-sig.figma.com/img/b42a/15a0/0b81413cac2344c9dd5239fea96ee6c6?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ANREU7PrnjjjS6Uh8~uv2JoAYcePO6xGLMIETqtuUsyb7baymHwFEMj5LrczPm7c2oo0B92MX-SVoA~0NZM3Cjfs27hzVJQMR7QSzrPaHvRQrwfCxsXKYIqW~6nzeHiTbb-ofYsnGaxSiGrGEndAxKCIRY5-~q5E4KbuSw6jMBJfNDdhRpI7tUgN4FZiodzm8j3dE3ONG8XBO06I-kTDqHBppJX~jlbgwWRAPYdY6xRXJjqoXSadwpHbJ2e4aZ63E-owx0hs2BJmqKsAVpUcL9RyKoesZLmybCI-7aPX~CxD5KymHWvUp5wSN4xsBC8kHgdmSHxIWcudjTQtPf-B6w__');
+                "
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6 text-white"
+                >
+                  <p class="text-center text-sm mb-2">SEPTEMBER 6, 2023</p>
+                  <h2
+                    class="text-center font-montserrat text-2xl font-bold mb-4"
+                  >
+                    A REMINDER TO ALL PARENTS: YOU DON'T HAVE TO GET IT 'RIGHT'
+                    ALL THE TIME.
+                  </h2>
+                  <button
+                    class="mx-auto w-[37%] text-xs bg-[#c1989f] rounded-full py-2 px-6 text-white"
+                  >
+                    READ MORE
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="w-1/2">
+              <div class="space-y-6">
+                <!-- Blog 1 -->
+                <div class="flex overflow-hidden border-none shadow-none">
+                  <img
+                    alt="Blog image 1"
+                    class="w-1/3 object-cover"
+                    src="https://s3-alpha-sig.figma.com/img/688e/27b0/1374534d4c014ef6b464fbd60c81fbb9?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zq9lBrNssk1KXysd9rUqVbP3-5P9FG2~fxRx31FbbAazW9ZJzIMqGdTwJWlxJyc6Us4bGhwZEpcRZ6~GsFlGnEjPu70Q0toUpYfH7WYGzpq1QdV0kA29Ass81PYjXCwY-Jj7VMDWyrsB4tpSpKUAmqIVmQxAt0lx1AKRCJQzRKg3l04W7Bbudevw70SbqrhWvlBsXJquqxdimv0Oydwu7kIsI-oENJpQQBftKthjahXsayN1IasxhdwElH7IV0z41ZfnGNVY9k9PoGKQLsXowPGGOMfqktgSWJknD803Z33z7X7XoKybDlQ9lxuAx5gpdMSZ-EQpxx7utvu0f1ikyA__"
+                  />
+                  <div class="flex-1 py-2 px-4">
+                    <p
+                      class="text-xs text-[#376489] font-montserrat font-mediummb-2"
+                    >
+                      OCTOBER 31, 2023
+                    </p>
+                    <h3 class="text-md font-bold leading-5 my-2 text-[#376489]">
+                      WHY VALIDATING YOUR CHILD'S <br />EMOTIONS CAN BACKFIRE
+                      (AND WHAT TO <br />
+                      DO INSTEAD)
+                    </h3>
+                    <button
+                      class="bg-[#376489] rounded-full py-2 px-4 text-white text-xs"
+                    >
+                      READ MORE
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="flex overflow-hidden border-none shadow-none">
+                  <img
+                    alt="Blog image 2"
+                    class="w-1/3 h-40 object-cover"
+                    src="https://s3-alpha-sig.figma.com/img/2405/68f0/69a2a9609d23553976838ad2dc53dacf?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gwSVGF9S~O07YHXSFcSz0bgfAsiB0Beexuz6gxMT0dnLsga0vcLUSnRlsZKT9RPBsbC64-LJJEQXMKROhs4ufVFP4VtBC-S8uhgxZr9YDq1tTKwMlU6pYvNkJh74Gej0IXS95pir5jPb3D-cw-JAvsfVlZftpQrm7upmNvFmyak1QK-XwM3WfOzGEyfbJnmYyhTAZ5gzMGBHKdkRqaZkdN4h2Fia0aI-Nzlw1kKSQDuT4xdQjDajNMkMZMet1zwBT-OiYbtod2jvN-45nX38FcoWHouQw3~lmhaLwnR14qM-nkjD-VEW~9dufCg4yYfGHobwAPuOCBHrPxyXYMCvQA__"
+                  />
+                  <div class="flex-1 py-2 px-4">
+                    <p
+                      class="text-xs text-[#376489] font-montserrat font-medium mb-2"
+                    >
+                      JUNE 20, 2023
+                    </p>
+                    <h3 class="text-md font-bold mb-2 text-[#376489]">
+                      EMBRACING THE CHAOS: USING EMOTIONAL INTELLIGENCE TO MOVE
+                      THROUGH ANGER.
+                    </h3>
+                    <button
+                      class="bg-[#376489] rounded-full py-2 px-4 text-white text-xs"
+                    >
+                      READ MORE
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="flex overflow-hidden border-none shadow-none">
+                  <img
+                    alt="Blog image 3"
+                    class="w-1/3 h-40 object-cover"
+                    src="https://s3-alpha-sig.figma.com/img/6a7a/5f8d/09b87f365ecbde8e4b5cf448acc345fb?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fT-b35RG72G19ptXwJhjGEuxvjnhbzwZ-Ktz-ewhpmK33uzAUVY~1Qnxnf7pcLJzV-1r0l6fGPQSjDiU0HLxmm9dEYlIMhHD8YtIcRTWtAq0O0z8rUJ13l3vkMFzS9aHEoQ4SRuBqw2FCen4K2Psa8EiQW7pb-5i7MmidQjO4ynwGOPXYV1I8WHf3nAAXIO5gZM3s9gffCvA1v~k06zuEmQUQr3yj15aMMbUh8kgQTkoZufYNzQW09u8twFcFTL6tWi6ZTNP~bganxDLxFoUk1uz69bd8yWQ0olllL7hHK0PFLGQ~XhmP3DNmzBo6FxIbxTCUplQZn7mGshELLCPPA__"
+                  />
+                  <div class="flex-1 py-2 px-4">
+                    <p
+                      class="text-xs text-[#376489] font-montserrat font-medium mb-2"
+                    >
+                      APRIL 21, 2023
+                    </p>
+                    <h3 class="text-md font-bold mb-2 text-[#376489]">
+                      HOW TO STOP STRUGGLING AND START EMBRACING YOUR CHILD'S
+                      BIG EMOTIONS.
+                    </h3>
+                    <button
+                      class="bg-[#376489] rounded-full py-2 px-4 text-white text-xs"
+                    >
+                      READ MORE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="mt-10 ml-[38vw] bg-[#c1989f] my-20 text-white py-2 text-sm px-16 py-2 rounded-full"
+        >
+          READ MORE
+        </button>
+      </section>
+    </div>
+
+    <!-- Section - Subscribe -->
+    <section class="my-24">
+      <div
+        class="relative w-full my-10"
+        style="
+          background-image: linear-gradient(
+              to left,
+              rgba(194, 213, 228, 1) 20%,
+              rgba(194, 213, 228, 0.9) 100%
+            ),
+            url('https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__');
+          height: 74vh;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <div class="flex justify-around h-full">
+          <div class="text-center w-[38%]">
+            <h1 class="title-heading text-2xl pt-10">
+              Love what you're reading
+            </h1>
+            <h1 class="text-4xl font-mangolia text-[#376489]">
+              Subscribe for more
+            </h1>
+            <p
+              class="mt-10 font-semibold text-center text-sm font-montserrat text-[#274C69]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla
+              nec. Risus id risus risus duis quisque dignissim amet. Tempus enim
+              volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper
+              adipiscing
+            </p>
+            <div class="relative flex justify-center mt-8">
+              <input
+                placeholder="Enter Email ID"
+                class="w-full max-w-[25rem] rounded-full border bg-white border-white bg-transparent px-3 py-2.5 pr-20 text-sm font-normal text-blue-gray-700"
+              />
+              <button
+                class="absolute right-0 top-0 bottom-0 w-[30%] z-10 rounded-full bg-[#376489] py-1 px-8 text-xs font-bold uppercase text-white"
+              >
+                SUBMIT
               </button>
             </div>
           </div>
-
-          <!-- Right Section -->
-          <div class="w-1/2">
-            <div class="space-y-6">
-              <!-- Blog 1 -->
-              <div class="flex overflow-hidden border-none shadow-none">
-                <img alt="Blog image 1" class="w-1/3 object-cover"
-                  src="https://s3-alpha-sig.figma.com/img/688e/27b0/1374534d4c014ef6b464fbd60c81fbb9?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zq9lBrNssk1KXysd9rUqVbP3-5P9FG2~fxRx31FbbAazW9ZJzIMqGdTwJWlxJyc6Us4bGhwZEpcRZ6~GsFlGnEjPu70Q0toUpYfH7WYGzpq1QdV0kA29Ass81PYjXCwY-Jj7VMDWyrsB4tpSpKUAmqIVmQxAt0lx1AKRCJQzRKg3l04W7Bbudevw70SbqrhWvlBsXJquqxdimv0Oydwu7kIsI-oENJpQQBftKthjahXsayN1IasxhdwElH7IV0z41ZfnGNVY9k9PoGKQLsXowPGGOMfqktgSWJknD803Z33z7X7XoKybDlQ9lxuAx5gpdMSZ-EQpxx7utvu0f1ikyA__" />
-                <div class="flex-1 py-2 px-4">
-                  <p class="text-xs text-gray-500 mb-2">OCTOBER 31, 2023</p>
-                  <h3 class="text-md font-semibold mb-2 text-blue-800">
-                    WHY VALIDATING YOUR CHILD'S EMOTIONS CAN BACKFIRE (AND
-                    WHAT TO DO INSTEAD)
-                  </h3>
-                  <button class="bg-[#376489] rounded-full py-2 px-4 text-white text-xs">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-
-              <!-- Blog 2 -->
-              <div class="flex overflow-hidden border-none shadow-none">
-                <img alt="Blog image 2" class="w-1/3 h-40 object-cover"
-                  src="https://s3-alpha-sig.figma.com/img/2405/68f0/69a2a9609d23553976838ad2dc53dacf?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gwSVGF9S~O07YHXSFcSz0bgfAsiB0Beexuz6gxMT0dnLsga0vcLUSnRlsZKT9RPBsbC64-LJJEQXMKROhs4ufVFP4VtBC-S8uhgxZr9YDq1tTKwMlU6pYvNkJh74Gej0IXS95pir5jPb3D-cw-JAvsfVlZftpQrm7upmNvFmyak1QK-XwM3WfOzGEyfbJnmYyhTAZ5gzMGBHKdkRqaZkdN4h2Fia0aI-Nzlw1kKSQDuT4xdQjDajNMkMZMet1zwBT-OiYbtod2jvN-45nX38FcoWHouQw3~lmhaLwnR14qM-nkjD-VEW~9dufCg4yYfGHobwAPuOCBHrPxyXYMCvQA__" />
-                <div class="flex-1 py-2 px-4">
-                  <p class="text-xs text-gray-500 mb-2">JUNE 20, 2023</p>
-                  <h3 class="text-md font-semibold mb-2 text-blue-800">
-                    EMBRACING THE CHAOS: USING EMOTIONAL INTELLIGENCE TO MOVE
-                    THROUGH ANGER.
-                  </h3>
-                  <button class="bg-[#376489] rounded-full py-2 px-4 text-white text-xs">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
-
-              <!-- Blog 3 -->
-              <div class="flex overflow-hidden border-none shadow-none">
-                <img alt="Blog image 3" class="w-1/3 h-40 object-cover"
-                  src="https://s3-alpha-sig.figma.com/img/6a7a/5f8d/09b87f365ecbde8e4b5cf448acc345fb?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fT-b35RG72G19ptXwJhjGEuxvjnhbzwZ-Ktz-ewhpmK33uzAUVY~1Qnxnf7pcLJzV-1r0l6fGPQSjDiU0HLxmm9dEYlIMhHD8YtIcRTWtAq0O0z8rUJ13l3vkMFzS9aHEoQ4SRuBqw2FCen4K2Psa8EiQW7pb-5i7MmidQjO4ynwGOPXYV1I8WHf3nAAXIO5gZM3s9gffCvA1v~k06zuEmQUQr3yj15aMMbUh8kgQTkoZufYNzQW09u8twFcFTL6tWi6ZTNP~bganxDLxFoUk1uz69bd8yWQ0olllL7hHK0PFLGQ~XhmP3DNmzBo6FxIbxTCUplQZn7mGshELLCPPA__" />
-                <div class="flex-1 py-2 px-4">
-                  <p class="text-xs text-gray-500 mb-2">APRIL 21, 2023</p>
-                  <h3 class="text-md font-semibold mb-2 text-blue-800">
-                    HOW TO STOP STRUGGLING AND START EMBRACING YOUR CHILD'S
-                    BIG EMOTIONS.
-                  </h3>
-                  <button class="bg-[#376489] rounded-full py-2 px-4 text-white text-xs">
-                    READ MORE
-                  </button>
-                </div>
-              </div>
+          <div class="relative hidden lg:block">
+            <div class="relative -mt-[9rem]">
+              <img class="w-[24rem]" src="assets/subscribe.png" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <button class="mt-10 ml-[38vw] bg-[#c1989f] my-20 text-white py-2 text-sm px-16 py-2 rounded-full  ">
-        READ MORE
-      </button>
     </section>
-  </div>
 
+    <!-- Section - Footer -->
 
-
-
-
-
-
-
-
-
-
-
-  <!-- Section - Footer 1 -->
-
-
-
-
-
-
-
-
-
-
-  <div class="relative w-full my-24 pb-20 pt-40 mt-[10rem]">
-    <!-- Background Image -->
-    <div class="absolute inset-0 bg-cover bg-center" style="
-      background-image: url('https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__');
-      background-size: cover;
-      background-position: center;
-    "></div>
-
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0" style="
-      background-image: linear-gradient(
-        90deg,
-        rgba(194, 213, 228, 0.5008054247089461) 0%,
-        rgba(194, 213, 228, 1) 50%,
-        rgba(194, 213, 228, 1) 100%
-      );
-    "></div>
-
-    <!-- Content -->
-    <div class="grid grid-cols-2">
-      <!-- Left Section -->
-      <div class="relative z-10 flex flex-col items-center justify-center h-full">
-        <div class="relative p-10 border border-[#376489] text-center w-[40rem]">
-          <h1 class="text-2xl font-bold absolute -top-5 ml-28 text-[#274c69]">
-            LOVE WHAT YOU ARE READING
-          </h1>
-          <h1 class="text-5xl font-bold text-[#274c69]">
-            Subscribe for more.
-          </h1>
-        </div>
-        <p class="w-[35rem] text-center my-8 text-lg font-semibold text-[#274c69]">
-          Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla nec.
-          Risus id risus risus duis quisque dignissim amet. Tempus enim volutpat
-          elit vel a nisl eu felis. Leo eget donec ullamcorper adipiscing
-        </p>
-        <div class="relative flex h-12 w-[30rem]">
-          <button
-            class="absolute right-0 top-0 bottom-0 w-28 z-10 rounded-full bg-[#376489] py-2 px-4 text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all focus:opacity-85 active:opacity-85">
-            SUBMIT
-          </button>
-          <input placeholder="Enter Email ID"
-            class="peer h-full w-full rounded-full border bg-white border-white bg-transparent px-3 py-2.5 pr-20 text-sm font-normal text-blue-gray-700" />
-        </div>
-      </div>
-
-      <!-- Right Section -->
-      <div class="relative">
-        <div class="absolute w-[32rem] h-[40rem] -top-60 right-10 z-10 overflow-hidden">
+    <footer class="bg-[#f5f5f5] mt-20 p-8">
+      <div class="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-5">
+        <!-- Logo Section -->
+        <div class="flex col-span-1 flex-col items-center md:items-start">
           <img
-            src="https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__"
-            alt="Background" class="object-cover w-full h-full" />
+            alt="Logo"
+            class="mb-4 w-auto h-28"
+            src="https://s3-alpha-sig.figma.com/img/61a0/fb40/55625fc7487e185460b8dd1b5f039bd3?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YmUTYMMEJ0Fe0s0ucMhtAV0VwAUx4wOk9Blw9ryrjrN1-W-Fvcf-5ajggRE3q6dWccgVH-urSSlcl2BFIz76CpxdjMec4TPatbleWiSFs5qYgiyT7yH8yAb7gOPhaB8jBeK2UdM-d9HVtRhgRc4~nqeK6ic6~Q9lio2ZyHTLdN-mq0xyCIdbORNt4b4A8nGmNoc~t0CzolKiCaiWKKrLD7B~PL8nsn1QdXiHnuNSA4nWMtJu1XPgNk4ZFHGGc~tB0OifZNB7hGtYICt4disGiNsaUDwQFcanyzJ7Sr5mQeTJtzwfSTC3thlTlP5NSUvxPOdweZHTjQJO-tny-0mZKw__"
+            style="object-fit: cover"
+          />
         </div>
-        <div class="absolute w-[32rem] h-[40rem] bg-[#738ca5] -top-64 right-14"></div>
-        <div class="absolute w-[32rem] -top-[20.2rem] right-5 z-20">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/a8f1/8db9/a80fde9ee47e026f3df2a7d405e22fcf?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D6qZJulr7uCMqGq~RVX6uUODk2umPgo3cIkpHU2X9OPlm6NgucaU-qwQT8CELmKqMTqeEO9oPRyTSXgyLSQRWt90Yft5BhGp0B7ilolm93VY21CYJBZUtjjFdBflUoKgemnPCS91Dn1UaRL2~1HVNeNvdfRH5q-ritMX0uboM9gFwWqT~x40xlN5BRubNONyI9JpXk-bJ-fLftnLWlAh3imVysWfza-me-ZSpiG6cnFxIHbLt3wdKFNtgT5a56w~zC0g3qZqnnFNShWVsAtTscZLNmSesqKLxdgrmir-qlewvDmzHCdnxKu8KjGL7I6lIcBn2jIinwuKWiMxmwdZCQ__"
-            alt="Overlay" class="object-cover w-full h-full" style="clip-path: inset(0 0 10% 0)" />
+
+        <!-- About Section -->
+        <div class="flex col-span-1 flex-col">
+          <h3 class="font-bold text-3xl text-[#376489] mb-2">ABOUT</h3>
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Contact Us</a
+          >
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Resources</a
+          >
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Podcast</a
+          >
+          <a class="text-muted-foreground" href="#">Books</a>
         </div>
-      </div>
-    </div>
-  </div>
 
+        <!-- Courses Section -->
+        <div class="flex col-span-1 flex-col">
+          <h3 class="font-bold text-3xl text-[#376489] mb-2">COURSES</h3>
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Rising Emotional Intelligent Kids</a
+          >
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Decoding & Defusing Your Child's Challenging Behavior</a
+          >
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Supporting Anxious & Sensitive Kids</a
+          >
+          <a
+            class="mb-2 text-muted-foreground text-[#5c768b] font-semibold"
+            href="#"
+            >Help! I'm a Shouty Parent!</a
+          >
+          <a class="text-muted-foreground" href="#"
+            >Emotional Intelligence & Freedom Technique</a
+          >
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Section - Footer 2 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <footer class="bg-[#f5f5f5] p-8">
-    <div class="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-5">
-      <!-- Logo Section -->
-      <div class="flex col-span-1 flex-col items-center md:items-start">
-        <img alt="Logo" class="mb-4 w-auto h-28"
-          src="https://s3-alpha-sig.figma.com/img/61a0/fb40/55625fc7487e185460b8dd1b5f039bd3?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YmUTYMMEJ0Fe0s0ucMhtAV0VwAUx4wOk9Blw9ryrjrN1-W-Fvcf-5ajggRE3q6dWccgVH-urSSlcl2BFIz76CpxdjMec4TPatbleWiSFs5qYgiyT7yH8yAb7gOPhaB8jBeK2UdM-d9HVtRhgRc4~nqeK6ic6~Q9lio2ZyHTLdN-mq0xyCIdbORNt4b4A8nGmNoc~t0CzolKiCaiWKKrLD7B~PL8nsn1QdXiHnuNSA4nWMtJu1XPgNk4ZFHGGc~tB0OifZNB7hGtYICt4disGiNsaUDwQFcanyzJ7Sr5mQeTJtzwfSTC3thlTlP5NSUvxPOdweZHTjQJO-tny-0mZKw__"
-          style="  object-fit: cover;" />
-      </div>
-
-      <!-- About Section -->
-      <div class="flex col-span-1 flex-col">
-        <h3 class="font-bold text-3xl text-[#376489] mb-2">ABOUT</h3>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Contact Us</a>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Resources</a>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Podcast</a>
-        <a class="text-muted-foreground" href="#">Books</a>
-      </div>
-
-      <!-- Courses Section -->
-      <div class="flex col-span-1 flex-col">
-        <h3 class="font-bold text-3xl text-[#376489] mb-2">COURSES</h3>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Rising Emotional Intelligent
-          Kids</a>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Decoding & Defusing Your Child's
-          Challenging Behavior</a>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Supporting Anxious & Sensitive
-          Kids</a>
-        <a class="mb-2 text-muted-foreground text-[#5c768b] font-semibold" href="#">Help! I'm a Shouty Parent!</a>
-        <a class="text-muted-foreground" href="#">Emotional Intelligence & Freedom Technique</a>
-      </div>
-
-
-      <!-- Awards Section -->
-      <div class="flex col-span-2 flex-col ml-20">
-        <h3 class="font-bold text-3xl text-[#376489] mb-2">AWARDS</h3>
-        <div class="flex space-x-2">
-          <img alt="Award 1" class="w-[10rem] h-[10rem]"
-            src="https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__"
-            style="aspect-ratio: 100/100; object-fit: cover;" />
-          <img alt="Award 1" class="w-[10rem] h-[10rem]"
-            src="https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__"
-            style="aspect-ratio: 100/100; object-fit: cover;" />
-
+        <!-- Awards Section -->
+        <div class="flex col-span-2 flex-col ml-20">
+          <h3 class="font-bold text-3xl text-[#376489] mb-2">AWARDS</h3>
+          <div class="flex space-x-2">
+            <img
+              alt="Award 1"
+              class="w-[10rem] h-[10rem]"
+              src="https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__"
+              style="aspect-ratio: 100/100; object-fit: cover"
+            />
+            <img
+              alt="Award 1"
+              class="w-[10rem] h-[10rem]"
+              src="https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__"
+              style="aspect-ratio: 100/100; object-fit: cover"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
+    <!-- Section - Footer 3 -->
 
-
-
-
-
-
-
-
-
-
-
-  <!-- Section - Footer 3 -->
-
-
-
-
-
-
-
-
-
-
-
-  <footer class="text-white text-center text-sm bg-[#C1989F] p-4 mt-4">
-    <div class="container mx-auto">
-      <p>&copy; 2024 - Stephanie Pinto. ALl rights reserved.</p>
-    </div>
-  </footer>
-</body>
-
+    <footer class="text-white text-center text-sm bg-[#C1989F] p-4 mt-4">
+      <div class="container mx-auto">
+        <p>&copy; 2024 - Stephanie Pinto. ALl rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
